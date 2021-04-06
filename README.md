@@ -12,6 +12,7 @@ Displays statistics on the most frequent times of travel
 Displays statistics on the most popular stations and trip
 Displays statistics on the total and average trip duration
 Displays statistics on bikeshare users
+Display all the data filtered
 
 ### Files used
 bikeshare.py
@@ -21,3 +22,4 @@ washington.csv
 
 ### Credits
 https://pandas.pydata.org/
+https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm
