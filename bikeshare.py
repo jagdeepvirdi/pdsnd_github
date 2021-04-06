@@ -156,12 +156,12 @@ def trip_duration_stats(df):
     # display total travel time
 
     TotalTravelTime=df['Trip Duration'].sum()
-    print('\nTotal Travel Time :',TotalTravelTime)
-    
+
     # display mean travel time
     
     MeanTravelTime=df['Trip Duration'].mean()
-    print('\nMean Travel Time :',MeanTravelTime)
+
+    print('Total Travel Time :',TotalTravelTime,'Mean Travel Time :',MeanTravelTime)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -195,9 +195,8 @@ def user_stats(df):
         byear_max = df['Birth Year'].max()
         byear_mode = df['Birth Year'].mode()[0]
 
-        print("Youngest Traveller Year :",byear_min)
-        print("Oldest Traveller Year :",byear_max)
-        print("Most Common Year of Birth :",byear_mode)
+        print("Youngest Traveller Year : ",byear_min," Oldest Traveller Year : ",byear_max," Most Common Year of Birth : ",byear_mode)
+
     else :
         print("Birth Year data is not available for this Data Frame")       
 
